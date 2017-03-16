@@ -1,0 +1,125 @@
+
+<html> 
+	<head>
+		<title> Josh's website </title> 
+			
+
+<link type="text/css" rel="stylesheet" href="main.css">
+
+<script>
+
+
+
+
+function banner(){ 
+var text = confirm("Click if you dare..."); 
+return text; 
+}
+
+function answer(){ 
+	var radio = document.getElementsByName("trivia"); 
+	var selection = false; 
+	var message = "";
+	for( var i = 0; i < radio.length; i++) { 
+		if(radio[i].value == "hello" && radio[i].checked == true) { 
+			selection = true; 
+		} //end if statement 
+	} //end for loop
+	if(selection == true) {
+message = message + "<b><p style='color:green'>Correct!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Sorry man you arent up on your videogames news.</p></b>"; 
+}
+document.getElementById("answer").innerHTML = message;
+}//end function answer
+</script>	
+	</head> 
+<body> 
+
+
+ 
+<a href="https://www.google.com/" onclick="return banner()"> 
+<center><header id="header"> It's wednesday my dudes! </header></center>
+</a> 
+
+
+<nav>
+	<ul>
+		<li class="navitem"> <a href="home.html">Home</a> </li>
+		<li class="navitem"> <a href="games.html">Games</a> </li>
+		<li class="navitem"> <a href="videos.html">Videos</a> </li>
+	</ul>	
+</nav>
+
+
+<div id="rightside">
+
+	<img src="https://screenshots.en.sftcdn.net/en/scrn/69692000/69692980/image-05-700x393.jpg" id = "image"/>
+	<p> This is untured and it is a very fun game! You should try it out! Here is the link! <a href="http://store.steampowered.com/app/304930/">Click here</a> This will take you to the website!
+	 </p>
+	<img src="http://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1479515605" id = "image"/> 
+	<p> This is Counter Strike: Global Offensive! Another really fun game!</p>
+	<a href="http://store.steampowered.com/app/730/">Click here</a> This will take you to their website!
+
+</div>
+
+<div id="leftside">
+	<h1> <strong style="color:blue;"> Josh Musick </strong> </h1>
+		<h3 style="color:red;"> Video games! </h3>
+			<ol class="listitem">
+				<li> I like to play video games!</li>
+				<li> I like to code which is a new skill that I am just starting to learn!</li>
+				<li> Coding is super fun! </li>
+			</ol>
+
+
+<p class="p1"> This is my new website where I will be talking about the best <b><u>game of the week</u></b> and other <b><u>video game related</u></b> stuff! I will list what the game of the week is and where you can get it! Also we can play games together. This will be an area where you can share your username and play with other people! </p>
+			
+
+			<ol class = "listitem">
+	
+				<li> Video games are really fun!</li>
+				<li> This is a place where you can share your video game experiences!</li>
+				<li> You can also play games with other people that you find on this site!</li>
+			</ol>
+
+
+
+	<hr/>
+
+
+
+<div class="trivia-wrap">
+	<h1> Video game question! </h1>
+	<p> What is the <span class="newest"><i>newest</i></span> game in the Battlefield series? </p>
+	<form>
+<div id="answer">
+</div>
+
+		<input type="radio" name="trivia" value="hi"> Battlefield 4 <br>
+		<input type="radio" name="trivia" value="hi"> Battlefield 3 <br>
+		<input type="radio" name="trivia" value="hi"> Battlefield Bad company 2 <br>
+		<input type="radio" name="trivia" value="hello"> Battlefield 1 <br>
+		<input type="button" value="Submit" onclick="answer()">
+		</form>
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ufiVW8m-IOM" frameborder="0" allowfullscreen></iframe>
+
+
+<audio width="400" height="220" controls>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+<br>
+<center><a href="https://www.google.com/"> This is my favorite website because I use it almost every day. So click here! </a></center> 
+
+<center> <strong style="color:blue;"> Josh Musick </strong> </center>
+	<br>
+<center><footer>
+	<span class="text">It's wednesday my dudes!</span>
+
+</footer></center>
+</body> 
+</html>
